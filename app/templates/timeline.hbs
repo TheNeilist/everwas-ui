@@ -1,0 +1,12 @@
+<div class="jumbo">
+    <h2>Everwas Timeline</h2>
+</div>
+
+
+<ul>
+{{#each model as |category|}}
+    <li>{{category.id}} - {{category.parentId}} - {{category.name}}</li>
+{{/each}}
+</ul>
+
+{{outlet}}
