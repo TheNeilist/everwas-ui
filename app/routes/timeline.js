@@ -2,6 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model() {
-    return this.get('store').findAll('category');
+    var timeline = this.get('store').findAll('timeline');
+    return timeline;
   }
 });
