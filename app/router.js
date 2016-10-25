@@ -9,6 +9,8 @@ const Router = Ember.Router.extend({
 Router.map(function() {
   this.route('timeline');
   this.route('timetree');
+  this.route('add-point');
+  this.route('add-period');
 });
 
 export default Router;
