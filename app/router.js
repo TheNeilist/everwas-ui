@@ -11,6 +11,7 @@ Router.map(function() {
   this.route('timetree');
   this.route('add-point');
   this.route('add-period');
+  this.route('add-category');
 });
 
 export default Router;

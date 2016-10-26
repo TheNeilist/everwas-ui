@@ -1,2 +1,24 @@
 <h2>Add Time Point</h2>
+
+<form {{action "addPoint" on="submit"}} class="pure-form pure-form-aligned">
+    <fieldset>
+        <div class="pure-control-group">
+            <label for="categoryId">Category</label>
+            {{input value=categoryId name="categoryId"}} {{#link-to 'add-category'}}Add Category{{/link-to}}
+        </div>
+        <div class="pure-control-group">
+            <label for="name">Name</label>
+            {{input value=name name="name"}}
+        </div>
+        <div class="pure-control-group">
+            <label for="time">Date/Time</label>
+            {{input value=time name="time"}}
+        </div>
+        <div class="pure-control-group">
+            <label for="submit" />
+            {{input type="submit" name="submit" value="Save" }}
+        </div>
+    </fieldset>
+</form>
+
 {{outlet}}

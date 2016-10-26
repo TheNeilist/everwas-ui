@@ -1,0 +1,16 @@
+<h2>Add Category</h2>
+
+<form {{action "addCategory" on="submit"}} class="pure-form pure-form-aligned">
+    <fieldset>
+        <div class="pure-control-group">
+            <label for="name">Category Name</label>
+            {{input value=name name="name"}}
+        </div>
+        <div class="pure-control-group">
+            <label for="submit" />
+            {{input type="submit" name="submit" value="Save" }}
+        </div>
+    </fieldset>
+</form>
+
+{{outlet}}
