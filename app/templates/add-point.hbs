@@ -4,15 +4,20 @@
     <fieldset>
         <div class="pure-control-group">
             <label for="categoryId">Category</label>
-            {{input value=categoryId name="categoryId"}} {{#link-to 'add-category'}}Add Category{{/link-to}}
+            <select name="categoryId" onchange={{action "setCategory"}}>
+                <option>Select a Category</option>
+                {{#each model as |category|}}
+                    <option value={{category.id}}>{{category.name}}</option>
+                {{/each}}
+            </select> {{#link-to 'add-category'}}Add Category{{/link-to}}
         </div>
         <div class="pure-control-group">
             <label for="name">Name</label>
             {{input value=name name="name"}}
         </div>
         <div class="pure-control-group">
-            <label for="time">Date/Time</label>
-            {{input value=time name="time"}}
+            <label for="time">Date</label>
+            {{pikaday-input onSelection=(action 'setDate') format='MM-DD-YYY'}}
         </div>
         <div class="pure-control-group">
             <label for="submit" />
