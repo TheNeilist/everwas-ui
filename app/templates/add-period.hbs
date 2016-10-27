@@ -1,2 +1,33 @@
 <h2>Add Time Period</h2>
+
+<form {{action "addPeriod" on="submit"}} class="pure-form pure-form-aligned">
+    <fieldset>
+        <div class="pure-control-group">
+            <label for="categoryId">Category</label>
+            <select name="categoryId" onchange={{action "setCategory"  value="target.value"}}>
+                <option>Select a Category</option>
+                {{#each model as |category|}}
+                    <option value={{category.id}}>{{category.name}}</option>
+                {{/each}}
+            </select> {{#link-to 'add-category'}}Add Category{{/link-to}}
+        </div>
+        <div class="pure-control-group">
+            <label for="name">Name</label>
+            {{input value=timePeriod.name name="name"}}
+        </div>
+        <div class="pure-control-group">
+            <label for="periodStart">Start Date</label>
+            {{pikaday-input onSelection=(action 'setPeriodStart') format='MM-DD-YYY'}}
+        </div>
+        <div class="pure-control-group">
+            <label for="periodEnd">End Date</label>
+            {{pikaday-input onSelection=(action 'setPeriodEnd') format='MM-DD-YYY'}}
+        </div>
+        <div class="pure-control-group">
+            <label for="submit" />
+            {{input type="submit" name="submit" value="Save" }}
+        </div>
+    </fieldset>
+</form>
+
 {{outlet}}
