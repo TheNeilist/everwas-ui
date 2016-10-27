@@ -2,28 +2,27 @@ import Ember from 'ember';
 
 export default Ember.Controller.extend({
 
+  timePoint: {},
+
   actions: {
 
     addPoint: function() {
       var self = this;
-      var newPoint = this.store.createRecord('timepoint', {
-       categoryId: this.get('categoryId'),
-       name: this.get('name'),
-       time: this.get('time')
-      });
+      var newPoint = this.store.createRecord('timepoint', self.timePoint);
+
       newPoint.save().then(function() {
-       self.transitionTo('timeline');
+       self.transitionToRoute('timeline');
       }).catch(function(error) {
        alert('Error: ' + error);
       });
     },
 
-    setDate: function(thedate) {
-      this.set('time', thedate);
+    setDate: function(formDate) {
+      this.timePoint.time = formDate;
     },
 
-    setCategory: function(theCategoryId) {
-      this.set('categoryId', theCategoryId);
+    setCategory: function(formCategoryId) {
+      this.timePoint.categoryId = formCategoryId;
     }
 
   }

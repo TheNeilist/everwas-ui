@@ -4,7 +4,7 @@
     <fieldset>
         <div class="pure-control-group">
             <label for="categoryId">Category</label>
-            <select name="categoryId" onchange={{action "setCategory"}}>
+            <select name="categoryId" onchange={{action "setCategory"  value="target.value"}}>
                 <option>Select a Category</option>
                 {{#each model as |category|}}
                     <option value={{category.id}}>{{category.name}}</option>
@@ -13,7 +13,7 @@
         </div>
         <div class="pure-control-group">
             <label for="name">Name</label>
-            {{input value=name name="name"}}
+            {{input value=timePoint.name name="name"}}
         </div>
         <div class="pure-control-group">
             <label for="time">Date</label>
