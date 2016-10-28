@@ -1,0 +1,22 @@
+Could not start watchman; falling back to NodeWatcher for file system events.
+Visit http://ember-cli.com/user-guide/#watchman for more info.
+
+Just getting started with Ember? Please visit http://localhost:4200/ember-getting-started to get going
+
+Livereload server on http://localhost:49152
+Serving on http://localhost:4200/
+{ [Error: socket hang up] code: 'ECONNRESET' }
+
+Build successful - 10669ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+Babel                                         | 2073ms              
+Babel                                         | 766ms               
+Babel                                         | 740ms               
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+Babel (15)                                    | 5880ms (392 ms)     
+TemplateCompiler (3)                          | 694ms (231 ms)      
+
