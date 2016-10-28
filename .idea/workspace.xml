@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9a8ec88c-2ebc-41ff-93a3-98bbacc969f7" name="Default" comment="add a time period to a category">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/start.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/stop.sh" />
+    <list default="true" id="9a8ec88c-2ebc-41ff-93a3-98bbacc969f7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/start.sh" afterPath="$PROJECT_DIR$/scripts/start.sh" />
     </list>
     <ignored path="everwas-ui.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,21 +34,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="start.sh" pinned="false" current-in-tab="false">
+      <file leaf-file-name="start.sh" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/start.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state relative-caret-position="30">
+              <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stop.sh" pinned="false" current-in-tab="true">
+      <file leaf-file-name="stop.sh" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/stop.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="90">
+              <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -153,8 +152,8 @@
         <option value="$PROJECT_DIR$/app/routes/add-point.js" />
         <option value="$PROJECT_DIR$/app/routes/add-period.js" />
         <option value="$PROJECT_DIR$/app/controllers/add-category.js" />
-        <option value="$PROJECT_DIR$/scripts/start.sh" />
         <option value="$PROJECT_DIR$/scripts/stop.sh" />
+        <option value="$PROJECT_DIR$/scripts/start.sh" />
       </list>
     </option>
   </component>
@@ -616,7 +615,14 @@
       <option name="project" value="LOCAL" />
       <updated>1477563295937</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="ci start/stop scripts">
+      <created>1477667586032</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1477667586032</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -690,7 +696,8 @@
     <MESSAGE value="save category and redirect to add point, sort categories and date picker for add point" />
     <MESSAGE value="add a time point to a category" />
     <MESSAGE value="add a time period to a category" />
-    <option name="LAST_COMMIT_MESSAGE" value="add a time period to a category" />
+    <MESSAGE value="ci start/stop scripts" />
+    <option name="LAST_COMMIT_MESSAGE" value="ci start/stop scripts" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1023,18 +1030,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/start.sh">
+    <entry file="file://$PROJECT_DIR$/scripts/stop.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/stop.sh">
+    <entry file="file://$PROJECT_DIR$/scripts/start.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="30">
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
           <folding />
         </state>
       </provider>
