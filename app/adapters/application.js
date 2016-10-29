@@ -1,8 +1,9 @@
 import DS from 'ember-data';
+import config from '../config/environment';
 
 export default DS.RESTAdapter.extend({
 //    host: 'http://localhost:8090',
-    host: 'http://ec2-52-43-138-208.us-west-2.compute.amazonaws.com:8090',
+    host: config.APP.API_HOST,
     headers: {
      'Accept': 'application/json'
     }

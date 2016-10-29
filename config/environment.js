@@ -25,6 +25,8 @@ module.exports = function(environment) {
      ENV.APP.LOG_TRANSITIONS = true;
      ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
      ENV.APP.LOG_VIEW_LOOKUPS = true;
+
+     ENV.APP.API_HOST = 'http://localhost:8090';
   }
 
   if (environment === 'test') {
@@ -36,10 +38,12 @@ module.exports = function(environment) {
     ENV.APP.LOG_VIEW_LOOKUPS = false;
 
     ENV.APP.rootElement = '#ember-testing';
+
+    ENV.APP.API_HOST = 'http://ec2-52-43-138-208.us-west-2.compute.amazonaws.com:8090';
   }
 
   if (environment === 'production') {
-
+    ENV.APP.API_HOST = 'http://ec2-52-43-138-208.us-west-2.compute.amazonaws.com:8090';
   }
 
   return ENV;
