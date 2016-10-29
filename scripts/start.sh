@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 BUILD_ID=pleaseDontKillMeUI
 cd /var/lib/jenkins/workspace/everwas-ui;
 nohup ember s > log.txt 2> errors.txt < /dev/null &

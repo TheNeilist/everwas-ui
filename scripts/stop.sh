@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 if [ -a /tmp/everwas-ui-pid ]
         then
                 PID=$(cat /tmp/everwas-ui-pid)
