@@ -40,7 +40,7 @@
     "ember-load-initializers": "^0.5.1",
     "ember-pikaday": "2.1.0",
     "ember-resolver": "^2.0.3",
-    "ember-timetree": "2.0.1",
+    "ember-timetree": "file:../ember-timetree",
     "ember-welcome-page": "^1.0.1",
     "loader.js": "^4.0.1"
   }
