@@ -11,4 +11,4 @@ const TimeTreeOverrride = TimeTreeComponent.extend({
 
 });
 
-export default TimeTreeOverrride
+export default TimeTreeOverrride;

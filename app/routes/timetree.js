@@ -21,7 +21,7 @@ export default Ember.Route.extend({
               for(var s = 0; s < timePeriods.length; s++) {
                 var timePeriod = timePeriods[s];
                 var startTime = convertStringToDate(timePeriod.periodStart);
-                var endTime = convertStringToDate(timePeriod.periodEnd)
+                var endTime = convertStringToDate(timePeriod.periodEnd);
                 sections.push({
                   start: startTime.getTime(),
                   end: endTime.getTime()
