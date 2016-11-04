@@ -1,29 +1,5 @@
 <h2>Everwas Timeline</h2>
 
-<ul>
-    {{#each model as |timeline|}}
-        <li>{{timeline.category.id}} - {{timeline.category.parentId}} - {{timeline.category.name}}</li>
-        {{#if timeline.timePoints}}
-            <ul>
-                <li>Time Points</li>
-                <ul>
-                    {{#each timeline.timePoints as |timePoint|}}
-                        <li>{{timePoint.name}} - {{timePoint.time}}</li>
-                    {{/each}}
-                </ul>
-            </ul>
-        {{/if}}
-        {{#if timeline.timePeriods}}
-            <ul>
-                <li>Time Periods</li>
-                <ul>
-                    {{#each timeline.timePeriods as |timePeriod|}}
-                        <li>{{timePeriod.name}} - {{timePeriod.periodStart}} - {{timePeriod.periodEnd}}</li>
-                    {{/each}}
-                </ul>
-            </ul>
-        {{/if}}
-    {{/each}}
-</ul>
+{{time-tree-override content=model}}
 
 {{outlet}}
