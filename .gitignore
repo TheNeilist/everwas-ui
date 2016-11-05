@@ -17,6 +17,6 @@ npm-debug.log
 testem.log
 
 # IntelliJ
-.idea/
+/.idea
 *.iml
 *.iws
