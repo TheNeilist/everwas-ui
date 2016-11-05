@@ -4,7 +4,7 @@ export default Ember.Route.extend({
 
   model() {
 
-      return this.get('store').findAll('timeline').then(function(timelines) {
+      return this.get('store').findAll('timeline', { reload: true }).then(function(timelines) {
 
         var jsonTimelineArray = timelines.map(function(record) {
           return record.toJSON();
