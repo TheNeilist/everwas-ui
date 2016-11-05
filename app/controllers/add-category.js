@@ -15,7 +15,7 @@ export default Ember.Controller.extend({
 
         newCategory.save().then(function() {
           //todo: redirect to origination page or make this a modal
-          self.transitionToRoute('add-point');
+          self.transitionToRoute('add-period');
         }).catch(function(error) {
           alert('Error: ' + error);
         });
