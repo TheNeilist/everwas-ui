@@ -20,3 +20,4 @@ testem.log
 /.idea
 *.iml
 *.iws
+workspace.xml
