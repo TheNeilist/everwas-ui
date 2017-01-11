@@ -39,11 +39,11 @@ module.exports = function(environment) {
 
     ENV.APP.rootElement = '#ember-testing';
 
-    ENV.APP.API_HOST = 'http://localhost:8090';
+    ENV.APP.API_HOST = 'http://www.theneilist.com:8090';
   }
 
   if (environment === 'production') {
-    ENV.APP.API_HOST = 'http://localhost:8090';
+    ENV.APP.API_HOST = 'http://www.theneilist.com:8090';
   }
 
   return ENV;
