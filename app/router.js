@@ -13,6 +13,7 @@ Router.map(function() {
   this.route('add-point');
   this.route('add-period');
   this.route('add-category');
+  this.route('logout');
 });
 
 export default Router;

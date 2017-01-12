@@ -21,10 +21,8 @@ export default Ember.Controller.extend({
           dataType   : 'json',
           contentType: 'application/json; charset=UTF-8',
           data: authCreds,
-          type: 'POST',
-          contentType: 'application/json'
+          type: 'POST'
        }).then(function(responseObject/*, statusText, jqXHR*/) {
-
           self.set('userAuth.isAuthenticated', true);
           self.transitionToRoute('timeline');
        }, function(jqXHR/*, textStatus, errorThrown*/) {
